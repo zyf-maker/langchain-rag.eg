@@ -1,4 +1,4 @@
-# 极简Streamlit RAG应用依赖
+# RAG项目核心依赖 - 使用精简版以避免Streamlit Cloud部署问题
 requests==2.31.0
 PyPDF2==3.0.1
 langchain==0.1.9
