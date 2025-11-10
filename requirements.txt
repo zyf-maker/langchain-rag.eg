@@ -11,4 +11,4 @@ streamlit==1.31.0
 streamlit_extras==0.3.6
 python-dotenv==1.0.0
 # 显式指定与Python 3.13兼容的Pillow版本
-pillow==10.3.0
+pillow==10.4.0
