@@ -1,14 +1,13 @@
-# RAG项目核心依赖 - 使用精简版以避免Streamlit Cloud部署问题
-requests==2.31.0
-PyPDF2==3.0.1
-langchain==0.1.9
-langchain_community==0.0.25
-chromadb==0.4.22
-streamlit==1.27.2
+# 极简Streamlit RAG应用依赖 - 使用经过验证的稳定版本组合
+requests==2.30.0
+PyPDF2==2.12.1
+langchain==0.0.344
+streamlit==1.26.0
 streamlit_extras==0.3.6
 python-dotenv==1.0.0
 numpy==1.24.3
-pydantic==2.4.2
+pydantic==2.0.3
 pydantic-settings==2.0.3
-scikit-learn==1.3.0
-# 仅保留最基本的必要依赖，让pip自动解析传递依赖关系
+# 使用更成熟的向量存储替代chromadb
+faiss-cpu==1.7.4
+# 确保版本兼容性
