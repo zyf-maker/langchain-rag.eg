@@ -1,14 +1,20 @@
-# RAG项目极简依赖 - Streamlit Cloud专用
-# 更新版本以兼容Python 3.13并修复部署问题
-requests==2.30.0
-PyPDF2==3.0.1
-langchain==0.1.0
-langchain_community==0.0.20
-# 添加numpy依赖，因为代码中使用了numpy但requirements.txt未包含
-numpy==1.24.3
-# 更新Streamlit到与Python 3.13兼容的版本
-streamlit==1.31.0
-streamlit_extras==0.3.6
-python-dotenv==1.0.0
-# 显式指定与Python 3.13兼容的Pillow版本
-pillow==10.4.0
+# 基础工具库：保持稳定且兼容Python 3.13
+requests==2.32.3  # 升级到最新稳定版，修复安全漏洞
+python-dotenv==1.0.1  # 小版本升级，兼容无变化
+
+# PDF处理：升级到稳定兼容版
+PyPDF2==3.17.0  # 修复旧版本bug，适配新版langchain_community
+
+# LangChain核心：升级到适配Python 3.13的稳定版
+langchain==0.1.35  # 兼容高版本numpy和Python 3.13
+langchain_community==0.0.70  # 同步升级，解决依赖冲突
+
+# 数值计算：升级到支持Python 3.13的最低版本
+numpy==1.26.0  # 1.26.0起正式支持Python 3.13，无需distutils
+
+# 前端组件：确保与Python 3.13兼容
+streamlit==1.40.0  # 稳定支持Python 3.13，修复多项兼容性问题
+streamlit_extras==0.4.5  # 同步升级，适配新版streamlit
+
+# 图像处理：保持兼容且稳定
+pillow==10.4.0  # 无需修改，已兼容Python 3.13
