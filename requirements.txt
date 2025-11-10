@@ -26,4 +26,8 @@ pydantic==2.8.0
 pydantic-settings==2.1.0
 
 # 图数据库驱动：适配Python 3.13
+<<<<<<< HEAD
 neo4j==5.23.0
+=======
+neo4j==5.23.0
+>>>>>>> 0e66a31c6b036cd492731f600ae63fb1b73341b3
