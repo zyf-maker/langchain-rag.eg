@@ -1,9 +1,11 @@
 # RAG项目极简依赖 - Streamlit Cloud专用
-# 更新版本以兼容Python 3.13
+# 更新版本以兼容Python 3.13并修复部署问题
 requests==2.30.0
 PyPDF2==3.0.1
 langchain==0.1.0
 langchain_community==0.0.20
+# 添加numpy依赖，因为代码中使用了numpy但requirements.txt未包含
+numpy==1.24.3
 # 更新Streamlit到与Python 3.13兼容的版本
 streamlit==1.31.0
 streamlit_extras==0.3.6
